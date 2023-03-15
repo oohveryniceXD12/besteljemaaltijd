@@ -1,0 +1,40 @@
+.producten{
+    border: 1px solid black;
+    min-height: 500px;
+    min-width: 900px;
+    overflow: scroll;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.plak{
+    text-align: center;
+    
+}
+
+.plak1{
+    border-bottom: 1px solid black;
+}
+
+.plak-border {
+    border-bottom: 1px solid black;
+  }
+
+.plak1-border{
+    border-bottom: 1px solid black;
+}
+
+.prijs1{
+    text-align: right;
+    font-weight: bolder;
+}
+
+.prijs2{
+    text-align: right;
+    font-weight: bolder;
+}
+
+.producten > div{
+    display: block;
+    padding-left: 100px;
+}
