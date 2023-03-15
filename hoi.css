@@ -23,15 +23,24 @@ body{
 #info{
     height: 60px;
     width: 150px;
-    background: aqua;
-    
+    background: rgba(239, 239, 239, 0.355);
+    backdrop-filter: blur(5px) ;
+    border-radius: 20px;
     top: 50%;
     transform: translate(-0%,-50%);
     position: relative;
     transition: all 1s;
     justify-content: center;
+    transition-delay: 0.5s;
     
 }
+
+#info:hover{
+    height: 500px;
+    width: 250px;  
+    transition: all 1s;
+}
+
 
 .koptitel{
     font-size: 30px;
@@ -39,25 +48,32 @@ body{
     position: relative;
     top: 25%;
     transition: all 1s;
+    transition-delay: 0.5s;
+    
+    
 }
-.infotext{
-     top: 30%;
-     text-align: center;
-    position: relative;
-     font-size: 10px;
-     margin: 10px;
-     overflow:hidden;
-}
-
-#info:hover{
-    height: 500px;
-    width: 250px;   
-}
-
 #info:hover .koptitel{
     top: 10%;  
 }
 
+
+.infotext{
+     text-align: center;
+     position: relative;
+     font-size: 20px;
+     margin: 0px;
+     top: 20%;
+     overflow:hidden;
+     transform: scale(0);
+     opacity: 0;
+     transition: all 1s;
+     transition-delay: 0s;
+}
+
 #info:hover .infotext{
-    top: 10%;  
+    top: 20%;  
+    opacity: 1;
+    transform: scale(1);
+    transition: all 1s;
+    transition-delay: 0.5s;
 }
