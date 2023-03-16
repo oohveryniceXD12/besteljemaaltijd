@@ -1,0 +1,45 @@
+@media screen and (max-width: 600px) {
+
+
+    .infocontainer{
+        height: 100vh;
+        width: 100%;
+        gap: 120px;
+        flex-direction: column;
+        
+    }
+    
+    #info{
+        height: 60px;
+        width: 150px;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%,-0%);
+    }
+    
+    #info:hover{
+        height: 500px;
+        width: 250px;  
+    }
+    
+    
+    .koptitel{
+        font-size: 30px;
+        text-align: center;
+        top: 25%;
+    }
+    #info:hover .koptitel{
+        top: 10%;  
+    }
+    
+    
+    .infotext{
+         font-size: 20px;
+         margin: 0px;
+         top: 20%;
+    }
+    
+    #info:hover .infotext{
+        top: 20%;  
+    }
+}
