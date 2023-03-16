@@ -1,10 +1,37 @@
+body {
+    background-image: url("media/background goede.webp");
+    backdrop-filter: blur(5px);
+    color: rgb(255, 79, 79);
+    height: 100vh;
+  }
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .producten{
-    border: 1px solid black;
+    border: 1px solid rgb(255, 79, 79);
     min-height: 500px;
     min-width: 900px;
     overflow: scroll;
     max-width: 100px;
     max-height: 100px;
+}
+
+.resultaat{
+    margin-left: 10px;
+    border: 1px solid rgb(255, 79, 79);
+}
+
+.knop1{
+    margin-top: 10px;
+    background-color: rgb(255, 79, 79);
+    border-color: rgb(255, 79, 79);
+    border-radius: 100px;
+    width: 170px;
+    height: 60px;
+    cursor: pointer;
 }
 
 .plak{
@@ -14,6 +41,11 @@
 
 .plak1{
     border-bottom: 1px solid black;
+    display: none;
+}
+
+.plak2{
+    display: none;
 }
 
 .plak-border {
@@ -37,4 +69,8 @@
 .producten > div{
     display: block;
     padding-left: 100px;
+}
+
+.pt1{
+    display: none;
 }
