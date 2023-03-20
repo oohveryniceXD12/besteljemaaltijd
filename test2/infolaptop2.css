@@ -16,11 +16,13 @@ body{
     width: 100%;
     background-image:url(../img/Danderovski_vector_sushi_image_1ed3e9c7-2d3f-4601-b929-36377884819d.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 250vh;
+    background-attachment:fixed;
+    background-size:cover;
     gap: 60px;
     
 }
+
+
 
 .info{
     height: 60px;
@@ -30,18 +32,17 @@ body{
     border-radius: 20px;
     top: 50%;
     transform: translate(-0%,-50%);
-    margin-left:15%;
-    position: relative;
-    transition: width 1s, height 1s,left 1s;
-    left: 0;
-    transition-delay: 0.5s, 0.5s, 0s;
+    
+    left: -40%;
+    position: fixed;
+   transition: all 1s;
     
    
     
 }
 
 
-.info:hover{
+.infobig{
     height: 500px;
     width: 250px;  
     transition: all 1s;
@@ -54,13 +55,11 @@ body{
     position: relative;
     top: 25%;
     transition: all 1s;
-    transition-delay: 0.5s;
+    
     
     
 }
-.info:hover .koptitel{
-    top: 10%;  
-}
+
 
 
 .infotext{
@@ -68,7 +67,7 @@ body{
      position: relative;
      font-size: 20px;
      margin: 0px;
-     top: 20%;
+     top: 2%;
      overflow:hidden;
      transform: scale(0);
      opacity: 0;
@@ -76,10 +75,3 @@ body{
      transition-delay: 0s;
 }
 
-.info:hover .infotext{
-    top: 20%;  
-    opacity: 1;
-    transform: scale(1);
-    transition: all 1s;
-    transition-delay: 0.5s;
-}
