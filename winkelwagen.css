@@ -11,17 +11,27 @@ body {
 }
 
 .producten{
+    position: fixed;
+    background-color: white;
+    opacity: 0.6;
     border: 1px solid rgb(255, 79, 79);
-    min-height: 500px;
+    border-radius: 10px;
+    min-height: 89vh;
     min-width: 900px;
     overflow: scroll;
     max-width: 100px;
     max-height: 100px;
+    left: -9999px;
 }
 
 .resultaat{
+    position: fixed;
+    background-color: white;
+    opacity: 0.6;
     margin-left: 10px;
     border: 1px solid rgb(255, 79, 79);
+    border-radius: 10px;
+    left: 9999px;
 }
 
 .knop1{
@@ -73,4 +83,9 @@ body {
 
 .pt1{
     display: none;
+}
+
+.knopp1{
+    display: flex;
+    justify-content: right;
 }

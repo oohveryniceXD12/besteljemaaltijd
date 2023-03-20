@@ -10,3 +10,9 @@ function werk(){
         
     }
 
+window.onload = function() {
+    let div1 = document.getElementById("producten");
+    let div2 = document.getElementById("resultaat");
+    div1.style.left = "0px";
+    div2.style.left = "0px";
+}
