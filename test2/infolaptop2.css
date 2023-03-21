@@ -14,10 +14,11 @@ body{
 .infocontainer{
     height: 100vh;
     width: 100%;
-    background-image:url(../img/Danderovski_vector_sushi_image_1ed3e9c7-2d3f-4601-b929-36377884819d.png);
+    background-image:url(../img/websitebg.png);
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-size:cover;
+    background-position-y: -100px;
     gap: 60px;
     
 }
@@ -27,7 +28,7 @@ body{
 .info{
     height: 60px;
     width: 150px;
-    background: rgba(239, 239, 239, 0.355);
+    background: rgba(245, 160, 110, 0.261);
     backdrop-filter: blur(5px) ;
     border-radius: 20px;
     top: 50%;
@@ -35,18 +36,14 @@ body{
     
     left: -40%;
     position: fixed;
-   transition: all 1s;
+   transition: all 0.5s;
     
    
     
 }
 
 
-.infobig{
-    height: 500px;
-    width: 250px;  
-    transition: all 1s;
-}
+
 
 
 .koptitel{
@@ -67,7 +64,7 @@ body{
      position: relative;
      font-size: 20px;
      margin: 0px;
-     top: 2%;
+     top: -50%;
      overflow:hidden;
      transform: scale(0);
      opacity: 0;
