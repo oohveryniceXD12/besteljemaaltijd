@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+}
+
+.containertop{
+    height: 100vh;
+}
+
+.infocontainer{
+    height: 100vh;
+    width: 100%;
+    background-image:url(../img/websitebg.png);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position-y: -100px;
+    gap: 60px;
+    
+}
+
+
+
+.info{
+    height: 60px;
+    width: 150px;
+    background: rgba(245, 160, 110, 0.261);
+    backdrop-filter: blur(5px) ;
+    border-radius: 20px;
+    top: 50%;
+    transform: translate(-0%,-50%);
+    
+    left: -40%;
+    position: fixed;
+   transition: all 0.5s;
+    
+   
+    
+}
+
+
+
+
+
+.koptitel{
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 25%;
+    transition: all 1s;
+    
+    
+    
+}
+
+
+
+.infotext{
+     text-align: center;
+     position: relative;
+     font-size: 20px;
+     margin: 0px;
+     top: -50%;
+     overflow:hidden;
+     transform: scale(0);
+     opacity: 0;
+     transition: all 1s;
+     transition-delay: 0s;
+}
+
