@@ -1,0 +1,218 @@
+:root {
+    --background-main: #1a212c;
+    --color-dark: #141921;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--background-main);
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    top: 50px;
+    position: relative;
+}
+
+
+.background img {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #1a212ca4;
+    color: white;
+    text-decoration: none;
+    list-style-type: none; 
+    position: fixed;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    
+}
+
+header a {
+    color: rgb(195, 195, 195);
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+header a:hover {
+    color: white;
+    font-weight: 700;
+}
+
+#bussi {
+    transition: all 0.7s ease;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    float: right;
+    position: fixed;
+}
+
+.ni {
+    width: 100vw;
+    height: 700vh;
+}
+
+.text1 {
+    position: absolute;
+    width: 500px;
+    top: 50%;
+    left: -1000px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: transparent;
+    transition: all 0.8s ease;
+}
+
+.text1 p {
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+.text1 h1 {
+    margin-top: 50px;
+}
+
+#p1, #p2 {
+    font-size: 0px;
+    transition: font-size 0.8s ease;
+  }
+  
+
+
+
+  .contactpage {
+
+
+    background-color: #11161d;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    transition: all 1s ease;
+    margin: auto;
+    padding-bottom: 100px;
+  }
+
+
+  /* Styles for the body and header */
+  
+  h2 {
+    text-align: center;
+  }
+  
+  /* Styles for the form */
+  form {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4c68af;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #324e96;
+  }
+  
+
+
+  .ni {
+    width: 100vw;
+    height: 250vh;
+}
+
+#message {
+    height: 150px;
+    width: 100%;
+    max-width: 560px;
+    overflow: auto;
+  }
+
+  .h1ting {
+    padding-top: 100px;
+    padding-bottom: 10px;
+  }
+  
+  
+
+  #contact {
+    scroll-margin-top: 1300px;
+  }
+
+  .ding1 {
+    width: 100vw;
+    height: 30vh;
+    transition: all 1s ease;
+    background: linear-gradient(#1a212c,#11161d);
+  }
+  
+    .ding2 {
+        width: 100vw;
+        height: 30vh;
+    transition: all 1s ease;
+    background: linear-gradient(#11161d,#1a212c);
+    }

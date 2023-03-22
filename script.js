@@ -1,0 +1,165 @@
+///////////////////////// BUS /////////////////////////
+
+window.addEventListener("scroll", function(bus){
+    if (window.scrollY > 100 && window.scrollY < 1200) {
+        document.getElementById('bussi').style.width = '65%';
+        document.getElementById('bussi').style.height = '75%';
+        document.getElementById('bussi').style.top = '100px';
+
+        document.getElementById('bussi').style.position = 'fixed';
+        document.getElementById('bussi').style.left = '500px';
+    }
+
+    else {
+        document.getElementById('bussi').style.width = '100%';
+        document.getElementById('bussi').style.height = '110%';
+        document.getElementById('bussi').style.top = '0px';
+        document.getElementById('bussi').style.left = '0px';
+        document.getElementById('bussi').style.position = 'fixed';
+    }
+});
+
+///////////////////////// TEXT /////////////////////////
+
+window.addEventListener("scroll", function(text){
+    if (window.scrollY > 100 && window.scrollY < 1200) {
+        document.getElementById('text1').style.left = '300px';
+        document.getElementById('text1').style.top = '400px';
+        document.getElementById('text1').style.position = 'fixed';
+        document.getElementById('text1').style.color = 'white';
+
+        setTimeout(function () {
+
+            document.getElementById('text1').style.height = '300px';
+            document.getElementById('text1').style.background = 'transparent';
+
+            document.getElementById('text1').style.color = 'white';
+            document.getElementById('text1').style.borderRadius = '10px';
+            document.getElementById('p1').style.fontSize = '15px';
+            document.getElementById('p2').style.fontSize = '15px';
+        } , 800);
+    }
+
+    else {
+        document.getElementById('text1').style.left = '-9999px';
+        document.getElementById('text1').style.transition = 'all 0.8s ease';
+        document.getElementById('p1').style.fontSize = '0px';
+        document.getElementById('p2').style.fontSize = '0px';
+        setTimeout(function () {
+            document.getElementById('text1').style.height = '0';
+            document.getElementById('text1').style.background = 'transparent';
+            document.getElementById('text1').style.color = 'white';
+        } , 800);
+    }
+});
+
+///////////////////////// HIDE BUS / TEXT /////////////////////////
+
+window.addEventListener("scroll", function(hide) {
+    if (this.window.scrollY > 1200) {
+        document.getElementById('text1').style.left = '-2000px';
+        document.getElementById('bussi').style.left = '2000px';
+    }
+});
+
+// navbar,onscroll verander about font-weight to 600, en de rest naar 400 (zodat het duidelijk is waar je bent) doe dit bij alle pagina's
+
+window.addEventListener("scroll", function(page) {
+    if (this.window.scrollY < 1200) {
+        document.getElementById('home').style.textDecoration = 'underline';
+        document.getElementById('about').style.textDecoration = 'none';
+        document.getElementById('menu').style.textDecoration = 'none';
+        document.getElementById('contact').style.textDecoration = 'none';
+
+
+    }
+    else if (this.window.scrollY > 1200 && this.window.scrollY < 2400) {
+        document.getElementById('home').style.textDecoration = 'none';
+        document.getElementById('about').style.textDecoration = 'underline';
+        document.getElementById('menu').style.textDecoration = 'none';
+        document.getElementById('contact').style.textDecoration = 'none';
+    }
+});
+
+///////////////////////// BUS /////////////////////////
+
+window.addEventListener("scroll", function(bus){
+    if (window.scrollY > 100 && window.scrollY < 1200) {
+        document.getElementById('bussi').style.width = '65%';
+        document.getElementById('bussi').style.height = '75%';
+        document.getElementById('bussi').style.top = '100px';
+
+        document.getElementById('bussi').style.position = 'fixed';
+        document.getElementById('bussi').style.left = '500px';
+    }
+
+    else {
+        document.getElementById('bussi').style.width = '100%';
+        document.getElementById('bussi').style.height = '110%';
+        document.getElementById('bussi').style.top = '0px';
+        document.getElementById('bussi').style.left = '0px';
+        document.getElementById('bussi').style.position = 'fixed';
+    }
+});
+
+///////////////////////// TEXT /////////////////////////
+
+window.addEventListener("scroll", function(text){
+    if (window.scrollY > 100 && window.scrollY < 1200) {
+        document.getElementById('text1').style.left = '300px';
+        document.getElementById('text1').style.top = '400px';
+        document.getElementById('text1').style.position = 'fixed';
+        document.getElementById('text1').style.color = 'white';
+
+        setTimeout(function () {
+
+            document.getElementById('text1').style.height = '300px';
+            document.getElementById('text1').style.background = 'transparent';
+
+            document.getElementById('text1').style.color = 'white';
+            document.getElementById('text1').style.borderRadius = '10px';
+            document.getElementById('p1').style.fontSize = '15px';
+            document.getElementById('p2').style.fontSize = '15px';
+        } , 800);
+    }
+
+    else {
+        document.getElementById('text1').style.left = '-9999px';
+        document.getElementById('text1').style.transition = 'all 0.8s ease';
+        document.getElementById('p1').style.fontSize = '0px';
+        document.getElementById('p2').style.fontSize = '0px';
+        setTimeout(function () {
+            document.getElementById('text1').style.height = '0';
+            document.getElementById('text1').style.background = 'transparent';
+            document.getElementById('text1').style.color = 'white';
+        } , 800);
+    }
+});
+
+///////////////////////// HIDE BUS / TEXT /////////////////////////
+
+window.addEventListener("scroll", function(hide) {
+    if (this.window.scrollY > 1200) {
+        document.getElementById('text1').style.left = '-9999px';
+        document.getElementById('bussi').style.left = '9999px';
+    }
+});
+
+// navbar,onscroll verander about font-weight to 600, en de rest naar 400 (zodat het duidelijk is waar je bent) doe dit bij alle pagina's
+
+window.addEventListener("scroll", function(page) {
+    if (this.window.scrollY < 1200) {
+        document.getElementById('home').style.textDecoration = 'underline';
+        document.getElementById('about').style.textDecoration = 'none';
+        document.getElementById('menu').style.textDecoration = 'none';
+        document.getElementById('contact').style.textDecoration = 'none';
+
+
+    }
+    else if (this.window.scrollY > 1200 && this.window.scrollY < 2400) {
+        document.getElementById('home').style.textDecoration = 'none';
+        document.getElementById('about').style.textDecoration = 'none';
+        document.getElementById('menu').style.textDecoration = 'none';
+        document.getElementById('contact').style.textDecoration = 'underline';
+    }
+});
