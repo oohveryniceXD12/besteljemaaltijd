@@ -1,0 +1,14 @@
+*{
+  margin: 0;
+}
+
+.comtainermenu{
+  height: 100vh;
+  width: 100%;
+  background: radial-gradient(rgb(67, 67, 67),rgb(30, 29, 29));
+  display: flex;
+}
+
+.product{
+  
+}
