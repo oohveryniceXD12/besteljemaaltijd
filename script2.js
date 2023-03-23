@@ -1,5 +1,5 @@
 
-var velocity = 0.1;
+var velocity = 0.08;
 
 function update(){ 
 var pos = $(window).scrollTop(); 
@@ -7,7 +7,7 @@ $('.infocontainer').each(function() {
     var $element = $(this);
     // subtract some from the height b/c of the padding
     var height = $element.height()-18;
-    $(this).css('backgroundPosition', '50% ' + Math.round((height - pos) * velocity) +  'px'); 
+    $(this).css('backgroundPosition', '50% ' + Math.round((height - pos+1900) * velocity) +  'px'); 
    }); 
    };
 
