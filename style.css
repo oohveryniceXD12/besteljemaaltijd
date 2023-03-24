@@ -61,3 +61,15 @@
   background-color: rgba(127, 127, 127, 0.531);
 
 }
+
+.fa-solid{
+  color: aliceblue;
+}
+
+.fa-heart{
+color: aliceblue;
+top: 50%;
+left: 8%;
+position: relative;
+transform: translate(-0%,-50%);
+}
