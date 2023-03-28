@@ -1,8 +1,5 @@
-document.getElementById("plus").onmouseover = function() {mouseOver()};
-document.getElementById("plus").onmouseout = function() {mouseOut()};
-document.getElementById("plus").onmousedown = function() {toggle()};
 
-document.getElementById("plus").onmouseup = function() {kruis()};
+
 
 
 var aan =true
@@ -11,18 +8,10 @@ function toggle(){
     aan = !aan;
     console.log(aan)
 }
-function mouseOver() {
-    document.getElementById("plus").classList.add("fa-beat")
-}
 
-function mouseOut() {
-    document.getElementById("plus").classList.remove("fa-beat")
-}
+function kruis(i){
 
-
-function kruis(){
-
-    if(aan == true){
+    if(aan == true&&i==1){
 
         document.getElementById("plus").classList.remove("fa-solid")
         document.getElementById("plus").classList.remove("fa-check")
@@ -31,7 +20,7 @@ function kruis(){
         document.getElementById("plus").classList.add("fa-plus")
     }
 
-    if (aan == false){
+    if (aan == false&&i==1){
 
 
         document.getElementById("plus").classList.remove("fa-beat")
