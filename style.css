@@ -2,6 +2,11 @@
   margin: 0;
 }
 
+.containerboven{
+  width: 100%;
+  height: 100vh;
+}
+
 .comtainermenu{
   height: 200vh;
   width: 100%;
@@ -58,7 +63,10 @@
 }
 
 .image img{
-  width: 100%;
+  top: 0%;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%,-0%);
   height: 200px;
 }
 
@@ -116,18 +124,34 @@
 }
 
 .ingredienten{
-  color: aliceblue;
+  color: rgb(240, 248, 255);
 }
 
 .fa-plus{
+  display: none;
   scale: 1;
   transition: all 0.3s;
   animation-duration: 1s;
   animation-iteration-count: infinite;
-  
+  color: rgb(240, 248, 255);
 }
 
 .fa-plus:hover{
+  color: rgb(252, 54, 61);
+  animation-name: mymove;
+  animation-timing-function: ease;
+}
+
+.fa-check{
+  scale: 1;
+  transition: all 0.3s;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  display: none;
+
+}
+
+.fa-check:hover{
   color: rgb(252, 54, 61);
   animation-name: mymove;
   animation-timing-function: ease;

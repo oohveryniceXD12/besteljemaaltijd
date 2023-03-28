@@ -1,7 +1,3 @@
-
-
-
-
 var aan =true
 
 function toggle(){
@@ -9,27 +5,22 @@ function toggle(){
     console.log(aan)
 }
 
-function kruis(i){
+function kruis(){
 
-    if(aan == true&&i==1){
+    if(aan == true){
 
-        document.getElementById("plus").classList.remove("fa-solid")
-        document.getElementById("plus").classList.remove("fa-check")
-        document.getElementById("plus").classList.remove("fa-beat")
-        document.getElementById("plus").classList.add("fa-solid")
-        document.getElementById("plus").classList.add("fa-plus")
+        document.getElementById("plus").style.color = 'rgb(252, 54, 61)';
+       
     }
 
-    if (aan == false&&i==1){
+    if (aan == false){
 
-
-        document.getElementById("plus").classList.remove("fa-beat")
-        document.getElementById("plus").classList.remove("fa-solid")
-        document.getElementById("plus").classList.remove("fa-plus")
-        document.getElementById("plus").classList.add("fa-solid")
-        document.getElementById("plus").classList.add("fa-check")
+        document.getElementById("plus").style.color = 'rgb(240, 248, 255)';
+       
     }
 }
+
+
 
 
 
