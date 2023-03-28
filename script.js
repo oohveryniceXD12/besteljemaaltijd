@@ -23,4 +23,14 @@ function kruis(){
 
 
 
+var header = document.getElementById("cont");
+var add = header.offsetTop;
 
+
+function sliding() {
+    console.log(window.pageYOffset);
+    if (window.pageYOffset > add) {
+        console.log("hit");
+    }
+   
+}
