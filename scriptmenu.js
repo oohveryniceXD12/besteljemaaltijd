@@ -16,14 +16,14 @@ Array.from(myButtons).forEach(button => {
 }) 
 });
 
-window.onscroll = function() {sliding()};
+window.onscroll = function() {goup()};
 
-var header = document.getElementById("contmenu");
-var add = header.offsetTop;
+var menu = document.getElementById("contmenu");
+var addmenu = menu.offsetTop;
 
 
-function sliding() {
-    if (window.pageYOffset > add) {
+function goup() {
+    if (window.pageYOffset > addmenu) {
         document.getElementById("pro1").style.top = '50%';
         document.getElementById("pro2").style.top = '50%';
         document.getElementById("pro3").style.top = '50%';

@@ -1,6 +1,27 @@
-
+var menu = document.getElementById("contmenu");
+var addmenu = menu.offsetTop;
 var velocity = 0.08;
 
+//menuknoppen
+let myButtons = document.getElementsByClassName("fa-plus"); 
+Array.from(myButtons).forEach(button => { 
+    button.addEventListener("click", (event) => { 
+    console.log(button);
+    const id = event.target.getAttribute("id");
+    if(event.target.style.color =='rgb(240, 248, 255)')
+        event.target.style.color ='rgb(252, 54, 61)'; 
+    else{
+        event.target.style.color ='rgb(240, 248, 255)';   
+    }
+
+    function toevoegen(){
+        console.log(id);
+    }
+    
+}) 
+});
+
+//background effect
 function update(){ 
 var pos = $(window).scrollTop(); 
 $('.infocontainer').each(function() { 
@@ -47,6 +68,7 @@ var remove3 = text3.offsetTop-100;
 
 var header4 = document.getElementById("cont4")
 var add4 = header4.offsetTop;
+console.log("ja");
 
 function sliding() {
   console.log(window.pageYOffset);
@@ -119,5 +141,15 @@ function sliding() {
     infotext3.style.opacity = "0";
     infotext3.style.transform = "scale(0)";
   }
+
+  if (window.pageYOffset > addmenu-50) {
+    document.getElementById("pro1").style.top = '50%';
+    document.getElementById("pro2").style.top = '50%';
+    document.getElementById("pro3").style.top = '50%';
+}else{
+    document.getElementById("pro1").style.top = '150%';
+    document.getElementById("pro2").style.top = '150%';
+    document.getElementById("pro3").style.top = '150%';
+}
  
 }

@@ -126,40 +126,21 @@
 
 .ingredienten{
   color: rgb(240, 248, 255);
+  list-style-type:disc;
+  margin-left: 14%;
 }
 
 .fa-plus{
   display: none;
   scale: 1;
   transition: all 0.3s;
-  animation-duration: 1s;
   animation-iteration-count: infinite;
   color: rgb(240, 248, 255);
 }
 
 .fa-plus:hover{
-  color: rgb(252, 54, 61);
-  animation-name: mymove;
-  animation-timing-function: ease;
+  
+  scale: 1.4;
 }
 
-.fa-check{
-  scale: 1;
-  transition: all 0.3s;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  display: none;
 
-}
-
-.fa-check:hover{
-  color: rgb(252, 54, 61);
-  animation-name: mymove;
-  animation-timing-function: ease;
-}
-
-@keyframes mymove {
-  0% {scale: 1;}
-  50%{scale: 1.2;}
-  100% {scale: 1;}
-}
