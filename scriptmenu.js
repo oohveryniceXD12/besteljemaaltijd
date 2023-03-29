@@ -18,7 +18,7 @@ Array.from(myButtons).forEach(button => {
 
 window.onscroll = function() {sliding()};
 
-var header = document.getElementById("cont");
+var header = document.getElementById("contmenu");
 var add = header.offsetTop;
 
 
