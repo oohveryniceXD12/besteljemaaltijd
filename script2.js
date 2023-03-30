@@ -72,7 +72,7 @@ console.log("ja");
 
 function sliding() {
   console.log(window.pageYOffset);
-  if (window.pageYOffset > add&&window.pageYOffset < add2-200) {
+  if (window.pageYOffset > add-100&&window.pageYOffset < add2-200) {
     text.style.left = "10%";
 
     setTimeout(function(){
