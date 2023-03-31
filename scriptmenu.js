@@ -39,3 +39,11 @@ function goup() {
 }
 
 
+
+function naarpage(){
+    let a = document.getElementById("wwdiv");
+    for (let i = 0; i < 1; i++) {
+        console.log(a.innerHTML);
+        
+    }
+}

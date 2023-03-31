@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="info-box">
+        <p class="voornaam">Voornaam <span> (vereist)</span></p>
+        <input type="text" class="voornaaminput" placeholder="Naam">
+    
+        <p class="tussenvoegsel">Tussenvoegsel </p>
+        <input type="text" class="tussenvoegselinput" placeholder="Tussenvoegsel">
+
+        <p class="achternaam">Achternaam <span> (vereist)</span></p>
+        <input type="text" class="achternaaminput" placeholder="Achternaam">
+
+        <p class="card-details">Card Details</p>
+        <input type="text" class="card-detailsinput" placeholder="1234-5678-9123-4567">
+
+        <p class="card-expiry">Card Expiry Date</p>
+        <input type="text" class="card-expiryinput" placeholder="MM/YY">
+
+        <p class="card-cvv">Card CVC / CVV</p>
+        <input type="text" class="card-cvvinput" placeholder="123">
+
+        <p class="straatnaam">Straatnaam</p>
+        <input type="text" class="straatnaaminput" placeholder="Straatnaam">
+
+        <p class="huisnummer">Huisnummer</p>
+        <input type="text" class="huisnummerinput" placeholder="Huisnummer">
+        
+        <p class="postcode">Postcode</p>
+        <input type="text" class="postcodeinput" placeholder="Postcode">
+
+        <p class="woonplaats">Woonplaats</p>
+        <input type="text" class="woonplaatsinput" placeholder="Plaats">
+    </div>
+    
+
+    <div class="place-order-box">
+        <div class="products">
+            <p id="ITEMS">
+                Maki-Roll X3
+<br>
+Wagyu-Beef X2
+<br>
+Rainbow-Roll X5
+<br>
+            </p>
+        </div>
+        <div class="line1"></div>
+        <div class="pricing">
+            <div class="linksprijs">
+                <p class="subtotaal">Subtotaal: </p>
+                <p class="verzendkosten">Verzendkosten: </p>
+            </div>
+            <div class="prijs">
+                <p class="subtotaal">€123.75</p>
+                <p class="verzendkosten">€7,00</p>
+            </div>
+        </div>
+        <div class="line2"></div>
+        <div class="totaal">
+            
+        </div>
+        <div class="onderste">
+            <p class="tot">Totaal</p>
+            <p>EUR <span class="span">€130.75</span></p>
+        </div>
+        <button class="koop" onclick="koop()">Place order</button>
+
+    </div>
+
+    <script src="./script.js"></script>
+    <script>
+        window.addEventListener("load", function() {
+          logCartItems();
+        });
+
+        function koop() {
+            document.body.innerHTML = "<h1>Bedankt voor uw bestelling!</h1>";
+            document.body.style.textAlign = "center";
+            document.body.style.marginTop = "200px";
+        }
+      </script>
+      
+</body>
+</html>

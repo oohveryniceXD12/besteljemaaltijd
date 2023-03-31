@@ -224,6 +224,3 @@ function plus6(){
     wwprijs += 14.25;
     document.getElementById("wwprijs").innerHTML = "€" + wwprijs;
 }
-
-
-

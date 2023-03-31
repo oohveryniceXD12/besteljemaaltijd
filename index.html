@@ -34,7 +34,7 @@
             <hr>
             <p> prijs: </p> <p class="wwprijs" id="wwprijs">€</p>
             
-            <button class="checkout"><a class="checkout2" href="#">Checkout</a></button>
+            <a href="./afrekenen/index.html"><button class="checkout" >CHECKOUT</button></a>
         </div>
         <div id="startding" class="startding"></div>
         <div class="background">
@@ -196,36 +196,21 @@
     <div class="infocontainer" id="cont">
         <div class="infoalegien info" id="info">
             <p class="koptitel" id="kop">allergien</p>
-            <p class="infotext" id="infotext">lair fliqrghfilqrhgf half ghladkfhg 
-                arligf laihgrfklds a;iv fhglkfgh 
-                adljkhgxcv bkjhdfg hjkvfv bkjhc 
-                xgvjkhf gdakjhf vgjkhfd jc v 
-                fkahg fjkhgdkjchv fkjhag fcvjkh 
-                dfgkhg vjkfdhacg vjhadf </p>
+            <p class="infotext" id="infotext">Bij ons restaurant begrijpen we dat veel mensen allergieën hebben en we zijn blij om u te kunnen vertellen dat we rekening houden met uw allergieën. </p>
         </div>
     </div>
     
 <div class="infocontainer" id="cont2">
     <div class="infoalegien info" id="info2">
-        <p class="koptitel" id="kop2">vestegingen</p>
-        <p class="infotext" id="infotext2">lair fliqrghfilqrhgf half ghladkfhg 
-            arligf laihgrfklds a;iv fhglkfgh 
-            adljkhgxcv bkjhdfg hjkvfv bkjhc 
-            xgvjkhf gdakjhf vgjkhfd jc v 
-            fkahg fjkhgdkjchv fkjhag fcvjkh 
-            dfgkhg vjkfdhacg vjhadf </p>
+        <p class="koptitel" id="kop2">vesteging</p>
+        <p class="infotext" id="infotext2">onze hoofdvestiging bevind zich in rotterdam waar wij met plezier eten voor u maken. </p>
     </div>
 </div>
 
 <div class="infocontainer" id="cont3">
     <div class="infoalegien info" id="info3">
         <p class="koptitel"id="kop3">geschidenis</p>
-        <p class="infotext" id="infotext3">lair fliqrghfilqrhgf half ghladkfhg 
-            arligf laihgrfklds a;iv fhglkfgh 
-            adljkhgxcv bkjhdfg hjkvfv bkjhc 
-            xgvjkhf gdakjhf vgjkhfd jc v 
-            fkahg fjkhgdkjchv fkjhag fcvjkh 
-            dfgkhg vjkfdhacg vjhadf 
+        <p class="infotext" id="infotext3">Sushi is een traditioneel Japans gerecht dat al lang gegeten wordt. In de jaren 60 en 70 van de vorige eeuw begon sushi ook buiten Japan populair te worden en zo ontstonden er meer sushi restaurants.
         </p>
     </div>
 </div>
@@ -252,8 +237,35 @@
     <div class="ihate">
         
     </div>
+    <script>
+function naarpage() {
+  window.location = "/afrekenen/index.html";
+  let a = document.getElementById("wwdiv");
+  let paragraphs = a.querySelectorAll("p");
+  let data = [];
+
+  for (let i = 0; i < paragraphs.length; i++) {
+    data.push({
+      text: paragraphs[i].innerHTML.trim()
+    });
+  }
+
+  console.table(data);
+
+  let items = data.filter(item => item.text.includes('Roll') || item.text.includes('Beef') || item.text.includes('Maguro'));
+  let prijs = data.find(item => item.text.includes('prijs:')).text;
+
+  localStorage.setItem('items', JSON.stringify(items)); // sla de items op
+  localStorage.setItem('prijs', prijs.replace('prijs:', '').trim());
+}
 
 
+        
+              
+      </script>
+    
+    
+    
     
        
     <script src="./jquery.js"></script>
