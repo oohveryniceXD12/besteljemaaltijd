@@ -10,8 +10,11 @@ Array.from(myButtons).forEach(button => {
     }
 
     function toevoegen(){
-        console.log(id);
+        if (id == "plus1"){
+            document.getElementById("hoi").innerText = "hoi";
+        }
     }
+    
     
 }) 
 });
@@ -34,3 +37,5 @@ function goup() {
     }
    
 }
+
+

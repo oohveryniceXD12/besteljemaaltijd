@@ -163,3 +163,67 @@ window.addEventListener("scroll", function(page) {
         document.getElementById('contact').style.textDecoration = 'underline';
     }
 });
+
+let prdsmik = document.getElementById("prdsmik")
+
+function wwagen(){
+  let a = document.getElementById("wwdiv");
+  if (a.style.display === "block") {
+    a.style.display = "none";
+  } else {
+    a.style.display = "block";
+  }
+}
+
+let wwprijs = 0;
+
+let Droll = 1; 
+function plus1(){
+    document.getElementById("prdsmik1").innerHTML = "Dragon-Roll X" + Droll + "<br>";
+    Droll++;
+    wwprijs += 10.50;
+    document.getElementById("wwprijs").innerHTML = "€" + wwprijs;
+}
+
+let Mroll = 1;
+function plus2(){
+    document.getElementById("prdsmik2").innerHTML = "Maki-Roll X" + Mroll + "<br>";
+    Mroll++;
+    wwprijs += 12.50;
+    document.getElementById("wwprijs").innerHTML = "€" + wwprijs;
+}
+
+let Wroll = 1;
+function plus3(){
+    document.getElementById("prdsmik3").innerHTML = "Wagyu-Roll X" + Wroll + "<br>";
+    Wroll++;
+    wwprijs += 14.25;
+    document.getElementById("wwprijs").innerHTML = "€" + wwprijs;
+}
+
+let Tm = 1;
+function plus4(){
+    document.getElementById("prdsmik4").innerHTML = "Tai-Maguro X" + Tm + "<br>";
+    Tm++;
+    wwprijs += 22.50;
+    document.getElementById("wwprijs").innerHTML = "€" + wwprijs;
+}
+
+let Wb = 1;
+function plus5(){
+    document.getElementById("prdsmik5").innerHTML = "Wagyu-Beef X" + Wb + "<br>";
+    Wb++;
+    wwprijs += 7.50;
+    document.getElementById("wwprijs").innerHTML = "€" + wwprijs;
+}
+
+let Rroll = 1;
+function plus6(){
+    document.getElementById("prdsmik6").innerHTML = "Rainbow-Roll X" + Rroll + "<br>";
+    Rroll++;
+    wwprijs += 14.25;
+    document.getElementById("wwprijs").innerHTML = "€" + wwprijs;
+}
+
+
+
