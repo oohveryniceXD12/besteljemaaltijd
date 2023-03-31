@@ -124,6 +124,14 @@
   font-size: 25px;
 }
 
+.stuks{
+  color: rgb(240, 248, 255);
+  left: 15px;
+  bottom: 15px;
+  position: absolute;
+  font-size: 25px;
+}
+
 .ingredienten{
   color: rgb(240, 248, 255);
   list-style-type:disc;
